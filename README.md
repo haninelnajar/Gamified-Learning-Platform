@@ -1,66 +1,86 @@
-🎓 ShakoMako – Gamified Personalizable Educational Platform
+# 🎓 ShakoMako – Gamified Personalizable Educational Platform
 
- an ASP.NET Core + SQL Server web app designed to deliver gamified, personalized learning. It adapts content to learners’ needs while boosting engagement with rewards, quests, and leaderboards.
+> *An ASP.NET Core + SQL Server web app designed for engaging, adaptive learning.*
 
-🚀 Features
-Personalized learning profiles (preferences, personality, emotional state)
+ShakoMako delivers **personalized education** that adapts to learners’ unique needs while boosting motivation through **gamification**—including rewards, quests, achievements, and leaderboards.  
 
-Adaptive learning paths
+---
 
-Courses & modular content
+## 🚀 Features
 
-Quizzes and assessments
+✅ **Personalized Learning Profiles**  
+- Preferences, personality traits, emotional state  
+- Accessibility and health considerations
 
-Gamification:
+✅ **Adaptive Learning Paths**  
+- Dynamic, evolving sequences tailored to each learner  
 
-Badges
+✅ **Courses & Modular Content**  
+- Multi-format modules (videos, quizzes, text)  
+- Difficulty levels and learning objectives
 
-Achievements
+✅ **Interactive Quizzes & Assessments**  
+- Structured tasks with grading criteria  
+- Progress tracking
 
-Quests
+✅ **Gamification Elements**  
+- 🏅 Badges
+- 🎖️ Achievements
+- 🗺️ Quests & rewards
+- 🏆 Leaderboards
 
-Leaderboards
+✅ **Instructor Management Tools**  
+- Course creation and management  
+- Learner progress review  
+- Emotional feedback integration
 
-Instructor management
+✅ **Notifications**  
+- Alerts about deadlines, new content, and opportunities
 
-Notifications
+✅ **Discussion Forums** *(Planned)*  
+- Peer-to-peer learning and collaboration
 
-Discussion forums (planned)
+---
 
-🏗️ Tech Stack
-Frontend: ASP.NET Core Razor Pages
+## 🏗️ Tech Stack
 
-Backend: ASP.NET Core Web API
+| Layer       | Technology                           |
+| ----------- | ------------------------------------ |
+| **Frontend** | ASP.NET Core Razor Pages            |
+| **Backend**  | ASP.NET Core Web API                |
+| **Database** | SQL Server (Entity Framework Core)  |
 
-Database: SQL Server 
+---
 
-    📚 Database Overview
-    The system models:
+## 📚 Database Overview
 
-    Learners & Personalization Profiles
+Our relational database schema is designed to manage all key aspects of the platform:
 
-    Courses & Modules
-
-    Learning Activities
-
-    Enrollments
-
-    Assessments
-
-    Achievements & Badges
-
-    Leaderboards
-
-    Quests & Rewards
-
-    Emotional Feedback & Interaction Logs
-
-    Notifications & Discussion Forums
+- Learners & Personalization Profiles
+- Courses & Modules
+- Learning Activities
+- Enrollments
+- Assessments
+- Achievements & Badges
+- Leaderboards
+- Quests & Rewards
+- Emotional Feedback & Interaction Logs
+- Notifications & Discussion Forums
 
 ![Entity-Relationship Diagram](./images/EERD.drawio.png)
 
+> *Above: Our ERD showing the core entities and their relationships.*
+
+---
+
 ## 🎥 Demo Video
 
-Experience the platform in action!
+✨ **Experience the platform in action!**  
+
+Click below to watch our full demo on YouTube:
 
 [![Watch the Demo](./images/thumbnail.png)](https://youtu.be/2MFLryCjMtw)
+
+
+
+---
