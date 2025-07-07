@@ -63,4 +63,4 @@ Database: SQL Server
 
 Experience the platform in action!
 
-[![Watch the Demo](./images/demo-thumbnail.png)](https://www.youtube.com/watch?v=abc123XYZ)
+[![Watch the Demo](./images/thumbnail.png)](https://youtu.be/2MFLryCjMtw)
