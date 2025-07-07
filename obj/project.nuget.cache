@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lb6JKNLf4tE=",
+  "dgSpecHash": "E6s1lem1wjk=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Hanin Abdelsattar\\Desktop\\12\\ML3\\ML3.csproj",
+  "projectFilePath": "C:\\Users\\Hanin Abdelsattar\\Desktop\\12\\Gamified-Learning-Platform\\Gamified-Learning-Platform\\ML3.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Hanin Abdelsattar\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\Hanin Abdelsattar\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
