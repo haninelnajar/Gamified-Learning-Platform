@@ -1,0 +1,214 @@
+﻿@model ML3.Models.Learner
+
+@{
+    ViewData["Title"] = "Learner Details";
+}
+
+<div class="container-fluid bg-white">
+    <!-- Taskbar Navigation -->
+    <div class="row p-3 mb-4">
+        <div class="col text-left">
+            <a asp-action="Edit" asp-route-id="@Model?.LearnerId" class="btn btn-custom mx-2 btn-lg">Edit</a>
+            <a asp-action="Delete" asp-route-id="@Model?.LearnerId" class="btn btn-custom mx-2 btn-lg">Delete</a>
+            <a href="@Url.Action("Create", "Learninggoals")" class="btn btn-custom mx-2 btn-lg">Define a Learning Goal</a>
+            <a href="@Url.Action("Create", "LearnerDiscussions")" class="btn btn-custom mx-2 btn-lg">Add Post</a>
+            <a href="@Url.Action("Index", "Learningpaths")" class="btn btn-custom mx-2 btn-lg">Monitor Learning Paths</a>
+            <a href="@Url.Action("Index", "PersonalizationProfiles")" class="btn btn-custom mx-2 btn-lg">Profile</a>
+        </div>
+    </div>
+
+    <div class="row justify-content-start align-items-start min-vh-100 px-5">
+        <div class="col-md-8">
+            <!-- Title with larger font -->
+            <div class="text-left mb-5">
+                <h3 class="text-dark display-3">Learner Details</h3>
+            </div>
+
+            <!-- Learner Details Section -->
+            <div class="row mb-4">
+                <div class="col-sm-4 font-weight-bold text-dark">
+                    @Html.DisplayNameFor(model => model.FirstName)
+                </div>
+                <div class="col-sm-8 text-muted">
+                    @Html.DisplayFor(model => model.FirstName)
+                </div>
+            </div>
+
+            <div class="row mb-4">
+                <div class="col-sm-4 font-weight-bold text-dark">
+                    @Html.DisplayNameFor(model => model.LastName)
+                </div>
+                <div class="col-sm-8 text-muted">
+                    @Html.DisplayFor(model => model.LastName)
+                </div>
+            </div>
+
+            <div class="row mb-4">
+                <div class="col-sm-4 font-weight-bold text-dark">
+                    @Html.DisplayNameFor(model => model.Gender)
+                </div>
+                <div class="col-sm-8 text-muted">
+                    @Html.DisplayFor(model => model.Gender)
+                </div>
+            </div>
+
+            <div class="row mb-4">
+                <div class="col-sm-4 font-weight-bold text-dark">
+                    @Html.DisplayNameFor(model => model.BirthDate)
+                </div>
+                <div class="col-sm-8 text-muted">
+                    @Html.DisplayFor(model => model.BirthDate)
+                </div>
+            </div>
+
+            <div class="row mb-4">
+                <div class="col-sm-4 font-weight-bold text-dark">
+                    @Html.DisplayNameFor(model => model.Country)
+                </div>
+                <div class="col-sm-8 text-muted">
+                    @Html.DisplayFor(model => model.Country)
+                </div>
+            </div>
+
+            <div class="row mb-4">
+                <div class="col-sm-4 font-weight-bold text-dark">
+                    @Html.DisplayNameFor(model => model.CulturalBackground)
+                </div>
+                <div class="col-sm-8 text-muted">
+                    @Html.DisplayFor(model => model.CulturalBackground)
+                </div>
+            </div>
+
+            <div class="row mb-4">
+                <div class="col-sm-4 font-weight-bold text-dark">
+                    @Html.DisplayNameFor(model => model.Password)
+                </div>
+                <div class="col-sm-8 text-muted">
+                    @Html.DisplayFor(model => model.Password)
+                </div>
+            </div>
+
+            <!-- Courses Available and Enrolled Courses buttons aligned beside each other -->
+            <div class="row justify-content-start mt-5">
+                <div class="col-md-6 col-sm-12 mb-3">
+                    <a asp-controller="Courses" asp-action="Index" class="btn btn-custom btn-block btn-lg">
+                        Courses Available
+                    </a>
+                </div>
+                <div class="col-md-6 col-sm-12 mb-3">
+                    <a href="@Url.Action("Index", "CourseEnrollments")" class="btn btn-custom btn-block btn-lg">
+                        Enrolled Courses
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Add CSS for customization -->
+<style>
+    .bg-white {
+        background-color: #FFFFFF; /* White background */
+    }
+
+    .text-dark {
+        color: #333; /* Dark text color */
+    }
+
+    .btn-custom {
+        color: #FFC0CB; /* Pink text color */
+        background-color: #FFFFFF; /* White background */
+        border: 2px solid #FFC0CB; /* Pink border */
+        font-size: 1.25rem; /* Larger font for buttons */
+        padding: 1rem 2rem; /* Increased padding */
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+        .btn-custom:hover {
+            background-color: #FFC0CB; /* Pink background on hover */
+            color: #FFFFFF; /* White text on hover */
+        }
+
+    .row {
+        margin-top: 20px;
+    }
+
+    .col-sm-4 {
+        font-weight: bold;
+        color: #333; /* Dark text for labels */
+        font-size: 1.25rem; /* Larger font for labels */
+    }
+
+    .col-sm-8 {
+        font-size: 1.25rem;
+        color: #555; /* Lighter text for values */
+    }
+
+    .min-vh-100 {
+        min-height: 100vh;
+    }
+
+    .btn:hover {
+        text-decoration: none;
+    }
+
+    .shadow-lg {
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .p-4 {
+        padding: 2rem;
+    }
+
+    .rounded {
+        border-radius: 8px;
+    }
+
+    .text-muted {
+        color: #6c757d !important;
+    }
+
+    .btn-block {
+        width: 100%;
+    }
+
+    .px-5 {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    .mb-5 {
+        margin-bottom: 3rem;
+    }
+
+    .mb-3 {
+        margin-bottom: 1.5rem;
+    }
+
+    .display-3 {
+        font-size: 3rem; /* Larger title size */
+    }
+
+    .bg-pink {
+        background-color: #FFC0CB; /* Pink background */
+    }
+
+    .p-3 {
+        padding: 1rem;
+    }
+
+    .btn-custom {
+        background-color: #FFFFFF;
+        border: 2px solid #FFC0CB;
+        color: #FFC0CB;
+    }
+
+        .btn-custom:hover {
+            background-color: #FFC0CB;
+            color: #FFFFFF;
+        }
+
+    .text-left {
+        text-align: left;
+    }
+</style>

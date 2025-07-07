@@ -1,0 +1,111 @@
+﻿@model ML3.Models.Instructor
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<div class="container mt-4">
+    <h1 class="display-4 text-pink">Delete Instructor</h1>
+    <h3 class="text-muted">Are you sure you want to delete this instructor?</h3>
+    <hr />
+
+    <div class="bg-light p-4 rounded border border-pink">
+        <h4 class="text-pink">Instructor Details</h4>
+        <dl class="row mt-3">
+            <dt class="col-sm-3 font-weight-bold text-dark">
+                @Html.DisplayNameFor(model => model.Name)
+            </dt>
+            <dd class="col-sm-9 text-muted">
+                @Html.DisplayFor(model => model.Name)
+            </dd>
+            <dt class="col-sm-3 font-weight-bold text-dark">
+                @Html.DisplayNameFor(model => model.LatestQualification)
+            </dt>
+            <dd class="col-sm-9 text-muted">
+                @Html.DisplayFor(model => model.LatestQualification)
+            </dd>
+            <dt class="col-sm-3 font-weight-bold text-dark">
+                @Html.DisplayNameFor(model => model.ExpertiseArea)
+            </dt>
+            <dd class="col-sm-9 text-muted">
+                @Html.DisplayFor(model => model.ExpertiseArea)
+            </dd>
+            <dt class="col-sm-3 font-weight-bold text-dark">
+                @Html.DisplayNameFor(model => model.Email)
+            </dt>
+            <dd class="col-sm-9 text-muted">
+                @Html.DisplayFor(model => model.Email)
+            </dd>
+            <dt class="col-sm-3 font-weight-bold text-dark">
+                @Html.DisplayNameFor(model => model.Password)
+            </dt>
+            <dd class="col-sm-9 text-muted">
+                @Html.DisplayFor(model => model.Password)
+            </dd>
+        </dl>
+    </div>
+
+    <div class="mt-4">
+        <form asp-action="Delete">
+            <input type="hidden" asp-for="InstructorId" />
+            <button type="submit" class="btn btn-danger">Delete</button>
+            <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+        </form>
+    </div>
+</div>
+
+<!-- Add CSS for customization -->
+<style>
+    .text-pink {
+        color: #FFC0CB; /* Pink text */
+    }
+
+    .border-pink {
+        border-color: #FFC0CB !important; /* Pink border */
+    }
+
+    .btn-danger {
+        background-color: #FF0000; /* Red button background */
+        color: #FFFFFF; /* White text */
+        border: none;
+        padding: 0.5rem 1.5rem;
+        font-size: 1.25rem;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+        .btn-danger:hover {
+            background-color: #CC0000; /* Darker red on hover */
+            color: #FFFFFF; /* White text on hover */
+        }
+
+    .btn-secondary {
+        background-color: #6c757d; /* Secondary button background */
+        color: #FFFFFF; /* White text */
+        padding: 0.5rem 1.5rem;
+        font-size: 1.25rem;
+    }
+
+    .bg-light {
+        background-color: #FFFFFF; /* White background */
+    }
+
+    .text-muted {
+        color: #6c757d !important; /* Muted text */
+    }
+
+    .text-dark {
+        color: #333; /* Dark text for labels */
+    }
+
+    .font-weight-bold {
+        font-weight: bold;
+    }
+
+    .rounded {
+        border-radius: 8px;
+    }
+
+    .p-4 {
+        padding: 2rem;
+    }
+</style>

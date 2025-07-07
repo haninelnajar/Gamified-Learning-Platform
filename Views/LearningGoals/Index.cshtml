@@ -1,0 +1,107 @@
+﻿@model IEnumerable<ML3.Models.LearningGoal>
+
+@{
+    ViewData["Title"] = "Learning Goals";
+}
+
+<div class="container mt-4">
+    <h1 class="display-4 text-dark">Learning Goals</h1>
+    <p>
+        <a asp-action="Create" class="btn btn-pink">Create New Goal</a> <!-- Updated button color -->
+    </p>
+
+    <table class="table table-striped table-hover">
+        <thead class="thead-pink">
+            <tr>
+                <th>@Html.DisplayNameFor(model => model.Status)</th>
+                <th>@Html.DisplayNameFor(model => model.Deadline)</th>
+                <th>@Html.DisplayNameFor(model => model.Description)</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td class="@GetStatusClass(item.Status)">
+                        @Html.DisplayFor(modelItem => item.Status)
+                    </td>
+                    <td>@Html.DisplayFor(modelItem => item.Deadline)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Description)</td>
+                    <td>
+                        <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-lightblue btn-sm">Details</a> <!-- Updated button color -->
+                        <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-pink btn-sm">Edit</a> <!-- Updated button color -->
+                        <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-lightgrey btn-sm">Delete</a> <!-- Updated button color -->
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<!-- Custom CSS for Buttons -->
+<style>
+    /* Primary Button - Pink Background */
+    .btn-pink {
+        background-color: #FFC0CB; /* Light pink */
+        border: 1px solid #FFC0CB;
+        color: white;
+    }
+    .btn-pink:hover {
+        background-color: #FFB6C1; /* Lighter pink on hover */
+    }
+
+    /* Light Blue Button */
+    .btn-lightblue {
+        background-color: #ADD8E6; /* Light blue */
+        border: 1px solid #ADD8E6;
+        color: white;
+    }
+    .btn-lightblue:hover {
+        background-color: #87CEEB; /* Lighter blue on hover */
+    }
+
+    /* Light Grey Button */
+    .btn-lightgrey {
+        background-color: #D3D3D3; /* Light grey */
+        border: 1px solid #D3D3D3;
+        color: black;
+    }
+    .btn-lightgrey:hover {
+        background-color: #A9A9A9; /* Darker grey on hover */
+    }
+
+    /* Table Header - Pink Background */
+    .thead-pink {
+        background-color: #FFC0CB; /* Light pink */
+        color: white;
+    }
+
+    /* Table Row Hover Effect */
+    .table-hover tbody tr:hover {
+        background-color: #FFB6C1; /* Light pink on hover */
+    }
+
+    /* Table Row Font Color */
+    .table th, .table td {
+        color: #333; /* Dark text for readability */
+    }
+
+    /* Custom Status Class for In Progress */
+    .status-inProgress {
+        background-color: #FFFFFF; /* White background for In Progress */
+        color: #FFC0CB; /* Pink text */
+    }
+</style>
+
+<!-- C# Helper Method to Assign Status Class -->
+@functions {
+    public string GetStatusClass(string status)
+    {
+        if (status == "inProgress")
+        {
+            return "status-inProgress";
+        }
+        return string.Empty;
+    }
+}

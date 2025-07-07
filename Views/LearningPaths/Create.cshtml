@@ -1,0 +1,118 @@
+﻿@model ML3.Models.LearningPath
+
+@{
+    ViewData["Title"] = "Create Learning Path";
+}
+
+<div class="container mt-4">
+    <h1 class="display-4 text-light-pink">Create Learning Path</h1>
+    <hr class="border-light-pink" />
+
+    <div class="row">
+        <div class="col-md-6">
+            <form asp-action="Create" class="shadow-lg p-4 bg-white rounded">
+                <div asp-validation-summary="ModelOnly" class="alert alert-danger"></div>
+
+                <!-- Learner Selection -->
+                <div class="form-group">
+                    <label asp-for="LearnerId" class="control-label text-light-pink">Learner</label>
+                    <select asp-for="LearnerId" class="form-control border-light-pink" asp-items="ViewBag.LearnerId">
+                        <option value="">Select a Learner</option>
+                    </select>
+                    <span asp-validation-for="LearnerId" class="text-danger"></span>
+                </div>
+
+                <!-- Completion Status -->
+                <div class="form-group">
+                    <label asp-for="CompletionStatus" class="control-label text-light-pink">Completion Status</label>
+                    <input asp-for="CompletionStatus" class="form-control border-light-pink" placeholder="Enter completion status" />
+                    <span asp-validation-for="CompletionStatus" class="text-danger"></span>
+                </div>
+
+                <!-- Custom Content -->
+                <div class="form-group">
+                    <label asp-for="CustomContent" class="control-label text-light-pink">Custom Content</label>
+                    <textarea asp-for="CustomContent" class="form-control border-light-pink" rows="3" placeholder="Enter custom content"></textarea>
+                    <span asp-validation-for="CustomContent" class="text-danger"></span>
+                </div>
+
+                <!-- Adaptive Rules -->
+                <div class="form-group">
+                    <label asp-for="AdaptiveRules" class="control-label text-light-pink">Adaptive Rules</label>
+                    <textarea asp-for="AdaptiveRules" class="form-control border-light-pink" rows="3" placeholder="Enter adaptive rules"></textarea>
+                    <span asp-validation-for="AdaptiveRules" class="text-danger"></span>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="form-group mt-3">
+                    <input type="submit" value="Create" class="btn btn-light-pink btn-lg" />
+                    <a asp-action="Index" class="btn btn-light-grey btn-lg ml-2">Cancel</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
+
+<style>
+    .text-light-pink {
+        color: #FFC0CB; /* Light pink text */
+    }
+
+    .border-light-pink {
+        border-color: #FFC0CB !important; /* Light pink border */
+    }
+
+    .bg-white {
+        background-color: #FFFFFF; /* White background */
+    }
+
+    .btn-light-pink {
+        background-color: #FFC0CB; /* Light pink button */
+        color: #FFFFFF; /* White text */
+        border: none;
+        padding: 0.5rem 1.5rem;
+        font-size: 1.25rem;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+        .btn-light-pink:hover {
+            background-color: #FFB6C1; /* Slightly darker pink on hover */
+        }
+
+    .btn-light-grey {
+        background-color: #D3D3D3; /* Light grey button */
+        color: #333; /* Dark text */
+        padding: 0.5rem 1.5rem;
+        font-size: 1.25rem;
+        border: none;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+        .btn-light-grey:hover {
+            background-color: #A9A9A9; /* Darker grey on hover */
+            color: #FFFFFF; /* White text on hover */
+        }
+
+    .form-control {
+        border-radius: 8px;
+        padding: 0.75rem;
+    }
+
+    .rounded {
+        border-radius: 8px;
+    }
+
+    .p-3 {
+        padding: 1.5rem;
+    }
+
+    .control-label {
+        font-weight: bold;
+    }
+</style>

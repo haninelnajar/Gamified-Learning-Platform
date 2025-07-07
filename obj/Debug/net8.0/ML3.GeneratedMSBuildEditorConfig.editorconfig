@@ -1,0 +1,413 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = ML3
+build_property.RootNamespace = ML3
+build_property.ProjectDir = C:\Users\Hanin Abdelsattar\Desktop\12\ML3\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\Hanin Abdelsattar\Desktop\12\ML3
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EnableCodeStyleSeverity = 
+
+[C:/Users/Hanin Abdelsattar/Desktop/12/ML3/Views/Admins/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5zXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Hanin Abdelsattar/Desktop/12/ML3/Views/Admins/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5zXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Hanin Abdelsattar/Desktop/12/ML3/Views/Admins/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5zXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Hanin Abdelsattar/Desktop/12/ML3/Views/Admins/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5zXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Hanin Abdelsattar/Desktop/12/ML3/Views/Admins/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5zXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Hanin Abdelsattar/Desktop/12/ML3/Views/Assessments/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNzZXNzbWVudHNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Hanin Abdelsattar/Desktop/12/ML3/Views/Assessments/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNzZXNzbWVudHNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Hanin Abdelsattar/Desktop/12/ML3/Views/Assessments/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNzZXNzbWVudHNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Hanin Abdelsattar/Desktop/12/ML3/Views/Assessments/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNzZXNzbWVudHNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Hanin Abdelsattar/Desktop/12/ML3/Views/Assessments/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNzZXNzbWVudHNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Hanin Abdelsattar/Desktop/12/ML3/Views/CourseEnrollments/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlRW5yb2xsbWVudHNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Hanin Abdelsattar/Desktop/12/ML3/Views/CourseEnrollments/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlRW5yb2xsbWVudHNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Hanin Abdelsattar/Desktop/12/ML3/Views/CourseEnrollments/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlRW5yb2xsbWVudHNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Hanin Abdelsattar/Desktop/12/ML3/Views/CourseEnrollments/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlRW5yb2xsbWVudHNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Hanin Abdelsattar/Desktop/12/ML3/Views/CourseEnrollments/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlRW5yb2xsbWVudHNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Hanin Abdelsattar/Desktop/12/ML3/Views/Courses/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Hanin Abdelsattar/Desktop/12/ML3/Views/Courses/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Hanin Abdelsattar/Desktop/12/ML3/Views/Courses/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Hanin Abdelsattar/Desktop/12/ML3/Views/Courses/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Hanin Abdelsattar/Desktop/12/ML3/Views/Courses/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Hanin Abdelsattar/Desktop/12/ML3/Views/DiscussionForums/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlzY3Vzc2lvbkZvcnVtc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Hanin Abdelsattar/Desktop/12/ML3/Views/DiscussionForums/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlzY3Vzc2lvbkZvcnVtc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Hanin Abdelsattar/Desktop/12/ML3/Views/DiscussionForums/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlzY3Vzc2lvbkZvcnVtc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Hanin Abdelsattar/Desktop/12/ML3/Views/DiscussionForums/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlzY3Vzc2lvbkZvcnVtc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Hanin Abdelsattar/Desktop/12/ML3/Views/DiscussionForums/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlzY3Vzc2lvbkZvcnVtc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Hanin Abdelsattar/Desktop/12/ML3/Views/Home/Choice.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDaG9pY2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Hanin Abdelsattar/Desktop/12/ML3/Views/Home/Choice2.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDaG9pY2UyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Hanin Abdelsattar/Desktop/12/ML3/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Hanin Abdelsattar/Desktop/12/ML3/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Hanin Abdelsattar/Desktop/12/ML3/Views/InstructorDiscussions/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zdHJ1Y3RvckRpc2N1c3Npb25zXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Hanin Abdelsattar/Desktop/12/ML3/Views/InstructorDiscussions/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zdHJ1Y3RvckRpc2N1c3Npb25zXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Hanin Abdelsattar/Desktop/12/ML3/Views/InstructorDiscussions/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zdHJ1Y3RvckRpc2N1c3Npb25zXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Hanin Abdelsattar/Desktop/12/ML3/Views/InstructorDiscussions/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zdHJ1Y3RvckRpc2N1c3Npb25zXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Hanin Abdelsattar/Desktop/12/ML3/Views/InstructorDiscussions/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zdHJ1Y3RvckRpc2N1c3Npb25zXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Hanin Abdelsattar/Desktop/12/ML3/Views/Instructors/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zdHJ1Y3RvcnNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Hanin Abdelsattar/Desktop/12/ML3/Views/Instructors/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zdHJ1Y3RvcnNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Hanin Abdelsattar/Desktop/12/ML3/Views/Instructors/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zdHJ1Y3RvcnNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Hanin Abdelsattar/Desktop/12/ML3/Views/Instructors/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zdHJ1Y3RvcnNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Hanin Abdelsattar/Desktop/12/ML3/Views/Instructors/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zdHJ1Y3RvcnNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Hanin Abdelsattar/Desktop/12/ML3/Views/LearnerDiscussions/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVhcm5lckRpc2N1c3Npb25zXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Hanin Abdelsattar/Desktop/12/ML3/Views/LearnerDiscussions/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVhcm5lckRpc2N1c3Npb25zXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Hanin Abdelsattar/Desktop/12/ML3/Views/LearnerDiscussions/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVhcm5lckRpc2N1c3Npb25zXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Hanin Abdelsattar/Desktop/12/ML3/Views/LearnerDiscussions/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVhcm5lckRpc2N1c3Npb25zXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Hanin Abdelsattar/Desktop/12/ML3/Views/LearnerDiscussions/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVhcm5lckRpc2N1c3Npb25zXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Hanin Abdelsattar/Desktop/12/ML3/Views/Learners/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVhcm5lcnNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Hanin Abdelsattar/Desktop/12/ML3/Views/Learners/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVhcm5lcnNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Hanin Abdelsattar/Desktop/12/ML3/Views/Learners/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVhcm5lcnNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Hanin Abdelsattar/Desktop/12/ML3/Views/Learners/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVhcm5lcnNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Hanin Abdelsattar/Desktop/12/ML3/Views/Learners/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVhcm5lcnNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Hanin Abdelsattar/Desktop/12/ML3/Views/Learners/SignUp.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVhcm5lcnNcU2lnblVwLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Hanin Abdelsattar/Desktop/12/ML3/Views/LearningActivities/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVhcm5pbmdBY3Rpdml0aWVzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Hanin Abdelsattar/Desktop/12/ML3/Views/LearningActivities/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVhcm5pbmdBY3Rpdml0aWVzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Hanin Abdelsattar/Desktop/12/ML3/Views/LearningActivities/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVhcm5pbmdBY3Rpdml0aWVzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Hanin Abdelsattar/Desktop/12/ML3/Views/LearningActivities/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVhcm5pbmdBY3Rpdml0aWVzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Hanin Abdelsattar/Desktop/12/ML3/Views/LearningActivities/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVhcm5pbmdBY3Rpdml0aWVzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Hanin Abdelsattar/Desktop/12/ML3/Views/LearningGoals/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVhcm5pbmdHb2Fsc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Hanin Abdelsattar/Desktop/12/ML3/Views/LearningGoals/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVhcm5pbmdHb2Fsc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Hanin Abdelsattar/Desktop/12/ML3/Views/LearningGoals/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVhcm5pbmdHb2Fsc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Hanin Abdelsattar/Desktop/12/ML3/Views/LearningGoals/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVhcm5pbmdHb2Fsc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Hanin Abdelsattar/Desktop/12/ML3/Views/LearningGoals/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVhcm5pbmdHb2Fsc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Hanin Abdelsattar/Desktop/12/ML3/Views/LearningPaths/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVhcm5pbmdQYXRoc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Hanin Abdelsattar/Desktop/12/ML3/Views/LearningPaths/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVhcm5pbmdQYXRoc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Hanin Abdelsattar/Desktop/12/ML3/Views/LearningPaths/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVhcm5pbmdQYXRoc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Hanin Abdelsattar/Desktop/12/ML3/Views/LearningPaths/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVhcm5pbmdQYXRoc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Hanin Abdelsattar/Desktop/12/ML3/Views/LearningPaths/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVhcm5pbmdQYXRoc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Hanin Abdelsattar/Desktop/12/ML3/Views/LogIn/LogInAdmin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9nSW5cTG9nSW5BZG1pbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Hanin Abdelsattar/Desktop/12/ML3/Views/LogIn/LogInInstructor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9nSW5cTG9nSW5JbnN0cnVjdG9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Hanin Abdelsattar/Desktop/12/ML3/Views/LogIn/LogInLearner.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9nSW5cTG9nSW5MZWFybmVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Hanin Abdelsattar/Desktop/12/ML3/Views/Modules/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9kdWxlc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Hanin Abdelsattar/Desktop/12/ML3/Views/Modules/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9kdWxlc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Hanin Abdelsattar/Desktop/12/ML3/Views/Modules/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9kdWxlc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Hanin Abdelsattar/Desktop/12/ML3/Views/Modules/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9kdWxlc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Hanin Abdelsattar/Desktop/12/ML3/Views/Modules/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9kdWxlc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Hanin Abdelsattar/Desktop/12/ML3/Views/Notifications/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm90aWZpY2F0aW9uc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Hanin Abdelsattar/Desktop/12/ML3/Views/Notifications/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm90aWZpY2F0aW9uc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Hanin Abdelsattar/Desktop/12/ML3/Views/Notifications/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm90aWZpY2F0aW9uc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Hanin Abdelsattar/Desktop/12/ML3/Views/Notifications/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm90aWZpY2F0aW9uc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Hanin Abdelsattar/Desktop/12/ML3/Views/Notifications/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm90aWZpY2F0aW9uc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Hanin Abdelsattar/Desktop/12/ML3/Views/PersonalizationProfiles/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uYWxpemF0aW9uUHJvZmlsZXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Hanin Abdelsattar/Desktop/12/ML3/Views/PersonalizationProfiles/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uYWxpemF0aW9uUHJvZmlsZXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Hanin Abdelsattar/Desktop/12/ML3/Views/PersonalizationProfiles/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uYWxpemF0aW9uUHJvZmlsZXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Hanin Abdelsattar/Desktop/12/ML3/Views/PersonalizationProfiles/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uYWxpemF0aW9uUHJvZmlsZXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Hanin Abdelsattar/Desktop/12/ML3/Views/PersonalizationProfiles/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uYWxpemF0aW9uUHJvZmlsZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Hanin Abdelsattar/Desktop/12/ML3/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Hanin Abdelsattar/Desktop/12/ML3/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Hanin Abdelsattar/Desktop/12/ML3/Views/SignUp/SignUpAdmin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2lnblVwXFNpZ25VcEFkbWluLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Hanin Abdelsattar/Desktop/12/ML3/Views/SignUp/SignUpInstructor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2lnblVwXFNpZ25VcEluc3RydWN0b3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Hanin Abdelsattar/Desktop/12/ML3/Views/SignUp/SignUpLearner.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2lnblVwXFNpZ25VcExlYXJuZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Hanin Abdelsattar/Desktop/12/ML3/Views/Takenassessments/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFrZW5hc3Nlc3NtZW50c1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Hanin Abdelsattar/Desktop/12/ML3/Views/Takenassessments/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFrZW5hc3Nlc3NtZW50c1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Hanin Abdelsattar/Desktop/12/ML3/Views/Takenassessments/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFrZW5hc3Nlc3NtZW50c1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Hanin Abdelsattar/Desktop/12/ML3/Views/Takenassessments/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFrZW5hc3Nlc3NtZW50c1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Hanin Abdelsattar/Desktop/12/ML3/Views/Takenassessments/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFrZW5hc3Nlc3NtZW50c1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Hanin Abdelsattar/Desktop/12/ML3/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Hanin Abdelsattar/Desktop/12/ML3/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Hanin Abdelsattar/Desktop/12/ML3/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-7rmwzcb2h9

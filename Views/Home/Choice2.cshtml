@@ -1,0 +1,48 @@
+﻿@{
+    ViewData["Title"] = "Log In";
+}
+
+<div class="container-fluid bg-pink text-white">
+    <div class="row justify-content-center align-items-center min-vh-100">
+        <div class="col-lg-6 text-center">
+            <h1 class="display-4 mb-4">Log In</h1>
+            <p class="lead mb-5">Choose your role to get started:</p>
+            <div class="d-flex flex-column flex-md-row justify-content-center gap-4">
+                <a asp-action="LogInInstructor" asp-controller="LogIn"
+                   class="btn btn-lg btn-white px-5 py-3 rounded-pill shadow-lg">
+                    <span>Instructor</span>
+                </a>
+                <a asp-action="LogInAdmin" asp-controller="LogIn"
+                   class="btn btn-lg btn-white px-5 py-3 rounded-pill shadow-lg">
+                    <span>Admin</span>
+                </a>
+                <a asp-action="LogInLearner" asp-controller="LogIn"
+                   class="btn btn-lg btn-white px-5 py-3 rounded-pill shadow-lg">
+                    <span>Learner</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Add CSS for customization -->
+<style>
+    .bg-pink {
+        background-color: #FFC0CB; /* Soft pink background */
+    }
+
+    .btn-white {
+        color: #FFC0CB; /* Pink text color */
+        background-color: #FFFFFF; /* White button background */
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+        .btn-white:hover {
+            transform: scale(1.1); /* Expand on hover */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add shadow */
+        }
+
+    .btn:hover {
+        text-decoration: none;
+    }
+</style>

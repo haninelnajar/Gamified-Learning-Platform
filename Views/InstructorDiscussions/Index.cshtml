@@ -1,0 +1,58 @@
+﻿@model IEnumerable<ML3.Models.InstructorDiscussion>
+
+@{
+    ViewData["Title"] = "Instructor Discussions";
+}
+
+<div class="container mt-4">
+    <h1 class="display-4">Instructor Discussions</h1>
+    <hr />
+
+    <div class="mb-3">
+        <a asp-action="Create" class="btn btn-primary">Create New Discussion</a>
+    </div>
+
+    <table class="table table-striped table-hover">
+        <thead class="thead-dark">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Time)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Post)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Forum.ForumId)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Instructor.InstructorId)
+                </th>
+                <th class="text-center">Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Time)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Post)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Forum.ForumId)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Instructor.InstructorId)
+                    </td>
+                    <td class="text-center">
+                        <a asp-action="Details" asp-route-InstructorId="@item.InstructorId" asp-route-ForumId="@item.ForumId" class="btn btn-info btn-sm">Details</a>
+                        <a asp-action="Edit" asp-route-InstructorId="@item.InstructorId" asp-route-ForumId="@item.ForumId" class="btn btn-warning btn-sm">Edit</a>
+                        <a asp-action="Delete" asp-route-InstructorId="@item.InstructorId" asp-route-ForumId="@item.ForumId" class="btn btn-danger btn-sm">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

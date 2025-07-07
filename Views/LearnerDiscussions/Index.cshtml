@@ -1,0 +1,49 @@
+﻿@model IEnumerable<ML3.Models.LearnerDiscussion>
+
+@{
+    ViewData["Title"] = "Learner Discussions";
+}
+
+<div class="container mt-4">
+    <h1 class="display-4">Learner Discussions</h1>
+    <p>
+        <a asp-action="Create" class="btn btn-primary">Create New Discussion</a>
+    </p>
+
+    <table class="table table-bordered table-hover">
+        <thead class="thead-light">
+            <tr>
+                <th>@Html.DisplayNameFor(model => model.Time)</th>
+                <th>@Html.DisplayNameFor(model => model.Post)</th>
+                <th>Forum ID</th>
+                <th>Learner ID</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@Html.DisplayFor(modelItem => item.Time)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Post)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Forum.ForumId)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Learner.LearnerId)</td>
+                    <td>
+                        <a asp-action="Details"
+                           asp-route-learnerId="@item.LearnerId"
+                           asp-route-ForumId="@item.ForumId"
+                           class="btn btn-info btn-sm">Details</a>
+                        <a asp-action="Edit"
+                           asp-route-learnerId="@item.LearnerId"
+                           asp-route-ForumId="@item.ForumId"
+                           class="btn btn-warning btn-sm">Edit</a>
+                        <a asp-action="Delete"
+                           asp-route-learnerId="@item.LearnerId"
+                           asp-route-ForumId="@item.ForumId"
+                           class="btn btn-danger btn-sm">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

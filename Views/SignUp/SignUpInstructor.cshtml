@@ -1,0 +1,98 @@
+﻿@model ML3.Models.Instructor
+
+@{
+    ViewData["Title"] = "Sign Up - Instructor";
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card shadow-lg">
+                <div class="card-header text-center bg-pink text-white">
+                    <h3 class="mb-0">Instructor Sign-Up</h3>
+                </div>
+                <div class="card-body">
+                    <form asp-action="CreateInstructor">
+                        <div asp-validation-summary="ModelOnly" class="alert alert-danger" style="display:none;"></div>
+
+                        <div class="form-group mb-4">
+                            <label asp-for="Name" class="form-label">Full Name</label>
+                            <input asp-for="Name" class="form-control" placeholder="Enter your full name" />
+                            <span asp-validation-for="Name" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group mb-4">
+                            <label asp-for="LatestQualification" class="form-label">Qualification</label>
+                            <input asp-for="LatestQualification" class="form-control" placeholder="Enter your highest qualification" />
+                            <span asp-validation-for="LatestQualification" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group mb-4">
+                            <label asp-for="ExpertiseArea" class="form-label">Expertise Area</label>
+                            <input asp-for="ExpertiseArea" class="form-control" placeholder="Enter your area of expertise" />
+                            <span asp-validation-for="ExpertiseArea" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group mb-4">
+                            <label asp-for="Email" class="form-label">Email</label>
+                            <input asp-for="Email" type="email" class="form-control" placeholder="Enter your email address" />
+                            <span asp-validation-for="Email" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group mb-4">
+                            <label asp-for="Password" class="form-label">Password</label>
+                            <input asp-for="Password" type="password" class="form-control" placeholder="Create a secure password" />
+                            <span asp-validation-for="Password" class="text-danger"></span>
+                        </div>
+
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-white btn-lg">Create Account</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="card-footer text-center">
+                    <a asp-action="Index" class="text-pink">Back to List</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
+
+<!-- Add CSS for customization -->
+<style>
+    .bg-pink {
+        background-color: #FFC0CB; /* Soft pink background */
+    }
+
+    .text-pink {
+        color: #FFC0CB; /* Pink text color */
+    }
+
+    .btn-white {
+        color: #FFC0CB; /* Pink text color */
+        background-color: #FFFFFF; /* White button background */
+        border: 1px solid #FFC0CB; /* Pink border */
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .btn-white:hover {
+        transform: scale(1.1); /* Expand on hover */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add shadow */
+    }
+
+    .card-header.bg-pink {
+        background-color: #FFC0CB; /* Soft pink header */
+    }
+
+    .card-footer .text-pink {
+        color: #FFC0CB; /* Pink text color for the footer link */
+    }
+
+    .btn:hover {
+        text-decoration: none;
+    }
+</style>

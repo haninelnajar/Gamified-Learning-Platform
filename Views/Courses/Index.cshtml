@@ -1,0 +1,65 @@
+﻿@model IEnumerable<ML3.Models.Course>
+
+@{
+    ViewData["Title"] = "Courses";
+}
+
+<h2>All Courses</h2>
+
+<!-- Table of All Courses -->
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Learning Objective</th>
+            <th>Credit Points</th>
+            <th>Difficulty Level</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var course in Model)
+        {
+            <tr>
+                <td>@course.Title</td>
+                <td>@course.LearningObjective</td>
+                <td>@course.CreditPoints</td>
+                <td>@course.DifficultyLevel</td>
+                <td>
+                    <!-- Button to View Modules for a Specific Course -->
+                    <a asp-controller="Modules" asp-action="ByCourse" asp-route-courseId="@course.CourseId" class="btn btn-info">
+                        View Modules
+                    </a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<!-- Modules for the Selected Course -->
+@if (ViewBag.ModulesForCourse != null && ViewBag.SelectedCourseId != null)
+{
+    <h3>Modules for Selected Course</h3>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Module Title</th>
+                <th>Difficulty</th>
+                <th>Content URL</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var module in ViewBag.ModulesForCourse as IEnumerable<ML3.Models.Module>)
+            {
+                <tr>
+                    <td>@module.Title</td>
+                    <td>@module.Difficulty</td>
+                    <td><a href="@module.ContentUrl" target="_blank">View Content</a></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <!-- Clear Selection Button -->
+    <a asp-action="Index" class="btn btn-secondary">Back to Courses</a>
+}

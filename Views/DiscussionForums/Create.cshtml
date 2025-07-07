@@ -1,0 +1,131 @@
+﻿@model ML3.Models.DiscussionForum
+
+@{
+    ViewData["Title"] = "Create Discussion Forum";
+}
+
+<div class="container mt-4">
+    <div class="d-flex justify-content-between align-items-center">
+        <h1 class="display-4 text-light-pink">Create Discussion Forum</h1>
+        <a asp-action="Index" class="btn btn-light-grey btn-lg">Back to List</a>
+    </div>
+
+    <hr class="border-light-pink" />
+
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <form asp-action="Create" class="shadow-lg p-4 bg-white rounded">
+                <div asp-validation-summary="ModelOnly" class="alert alert-danger"></div>
+
+                <!-- Module Selection -->
+                <div class="form-group">
+                    <label asp-for="ModuleId" class="form-label text-light-pink">Module</label>
+                    <select asp-for="ModuleId" class="form-control border-light-pink" asp-items="ViewBag.ModuleId"></select>
+                </div>
+
+                <!-- Course Selection -->
+                <div class="form-group">
+                    <label asp-for="CourseId" class="form-label text-light-pink">Course</label>
+                    <select asp-for="CourseId" class="form-control border-light-pink" asp-items="ViewBag.CourseId"></select>
+                </div>
+
+                <!-- Forum Title -->
+                <div class="form-group">
+                    <label asp-for="Title" class="form-label text-light-pink">Forum Title</label>
+                    <input asp-for="Title" class="form-control border-light-pink" placeholder="Enter forum title" />
+                    <span asp-validation-for="Title" class="text-danger"></span>
+                </div>
+
+                <!-- Last Active -->
+                <div class="form-group">
+                    <label asp-for="LastActive" class="form-label text-light-pink">Last Active</label>
+                    <input asp-for="LastActive" class="form-control border-light-pink" placeholder="YYYY-MM-DD HH:MM:SS" />
+                    <span asp-validation-for="LastActive" class="text-danger"></span>
+                </div>
+
+                <!-- Timestamp -->
+                <div class="form-group">
+                    <label asp-for="TimeStamp" class="form-label text-light-pink">Timestamp</label>
+                    <input asp-for="TimeStamp" class="form-control border-light-pink" placeholder="YYYY-MM-DD HH:MM:SS" />
+                    <span asp-validation-for="TimeStamp" class="text-danger"></span>
+                </div>
+
+                <!-- Description -->
+                <div class="form-group">
+                    <label asp-for="Description" class="form-label text-light-pink">Description</label>
+                    <textarea asp-for="Description" class="form-control border-light-pink" rows="4" placeholder="Enter a brief description"></textarea>
+                    <span asp-validation-for="Description" class="text-danger"></span>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="form-group text-center mt-4">
+                    <input type="submit" value="Create" class="btn btn-light-pink btn-lg" />
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
+
+<style>
+    .text-light-pink {
+        color: #FFC0CB; /* Light pink text */
+    }
+
+    .border-light-pink {
+        border-color: #FFC0CB !important; /* Light pink border */
+    }
+
+    .bg-white {
+        background-color: #FFFFFF; /* White background */
+    }
+
+    .btn-light-pink {
+        background-color: #FFC0CB; /* Light pink button */
+        color: #FFFFFF; /* White text */
+        border: none;
+        padding: 0.75rem 1.5rem;
+        font-size: 1.25rem;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+        .btn-light-pink:hover {
+            background-color: #FFB6C1; /* Slightly darker pink on hover */
+        }
+
+    .btn-light-grey {
+        background-color: #D3D3D3; /* Light grey button */
+        color: #333; /* Dark text */
+        padding: 0.75rem 1.5rem;
+        font-size: 1.25rem;
+        border: none;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+        .btn-light-grey:hover {
+            background-color: #A9A9A9; /* Darker grey on hover */
+            color: #FFFFFF; /* White text on hover */
+        }
+
+    .form-control {
+        border-radius: 8px;
+        padding: 0.75rem;
+    }
+
+    .rounded {
+        border-radius: 8px;
+    }
+
+    .shadow-lg {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .control-label {
+        font-weight: bold;
+    }
+</style>

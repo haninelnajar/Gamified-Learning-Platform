@@ -1,0 +1,52 @@
+﻿@model ML3.Models.Instructor
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<div class="container mt-4">
+    <h1 class="display-4 text-primary">Create New Instructor</h1>
+    <hr />
+    <div class="row">
+        <div class="col-md-6">
+            <form asp-action="Create">
+                <div asp-validation-summary="ModelOnly" class="alert alert-danger"></div>
+                <div class="form-group">
+                    <label asp-for="Name" class="control-label font-weight-bold"></label>
+                    <input asp-for="Name" class="form-control" placeholder="Enter full name" />
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="LatestQualification" class="control-label font-weight-bold"></label>
+                    <input asp-for="LatestQualification" class="form-control" placeholder="Enter highest qualification" />
+                    <span asp-validation-for="LatestQualification" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="ExpertiseArea" class="control-label font-weight-bold"></label>
+                    <input asp-for="ExpertiseArea" class="form-control" placeholder="Enter area of expertise" />
+                    <span asp-validation-for="ExpertiseArea" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Email" class="control-label font-weight-bold"></label>
+                    <input asp-for="Email" type="email" class="form-control" placeholder="Enter email address" />
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Password" class="control-label font-weight-bold"></label>
+                    <input asp-for="Password" type="password" class="form-control" placeholder="Create a secure password" />
+                    <span asp-validation-for="Password" class="text-danger"></span>
+                </div>
+                <div class="form-group text-center mt-4">
+                    <input type="submit" value="Create" class="btn btn-success btn-lg" />
+                    <a asp-action="Index" class="btn btn-secondary btn-lg">Cancel</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

@@ -1,0 +1,117 @@
+﻿@model ML3.Models.Learner
+
+@{
+    ViewData["Title"] = "Edit Learner";
+}
+
+<div class="container mt-4">
+    <h1 class="display-4 text-pink">Edit Learner</h1>
+    <hr />
+
+    <div class="row">
+        <div class="col-md-6">
+            <form asp-action="Edit">
+                <div asp-validation-summary="ModelOnly" class="alert alert-danger"></div>
+                <input type="hidden" asp-for="LearnerId" />
+
+                <div class="form-group">
+                    <label asp-for="FirstName" class="control-label text-dark">First Name</label>
+                    <input asp-for="FirstName" class="form-control" placeholder="Enter first name" />
+                    <span asp-validation-for="FirstName" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="LastName" class="control-label text-dark">Last Name</label>
+                    <input asp-for="LastName" class="form-control" placeholder="Enter last name" />
+                    <span asp-validation-for="LastName" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Gender" class="control-label text-dark">Gender</label>
+                    <input asp-for="Gender" class="form-control" placeholder="Enter gender" />
+                    <span asp-validation-for="Gender" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="BirthDate" class="control-label text-dark">Birth Date</label>
+                    <input asp-for="BirthDate" type="date" class="form-control" />
+                    <span asp-validation-for="BirthDate" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Country" class="control-label text-dark">Country</label>
+                    <input asp-for="Country" class="form-control" placeholder="Enter country" />
+                    <span asp-validation-for="Country" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="CulturalBackground" class="control-label text-dark">Cultural Background</label>
+                    <input asp-for="CulturalBackground" class="form-control" placeholder="Enter cultural background" />
+                    <span asp-validation-for="CulturalBackground" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Password" class="control-label text-dark">Password</label>
+                    <input asp-for="Password" type="password" class="form-control" placeholder="Enter a secure password" />
+                    <span asp-validation-for="Password" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <input type="submit" value="Save" class="btn btn-pink btn-lg" />
+                    <a asp-action="Index" class="btn btn-lightgrey btn-lg ml-3">Cancel</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
+
+<!-- Custom CSS for Buttons -->
+<style>
+    /* Primary Button - Pink Background */
+    .btn-pink {
+        background-color: #FFC0CB; /* Light pink */
+        border: 1px solid #FFC0CB;
+        color: white;
+    }
+
+        .btn-pink:hover {
+            background-color: #FFB6C1; /* Lighter pink on hover */
+        }
+
+    /* Light Grey Button */
+    .btn-lightgrey {
+        background-color: #D3D3D3; /* Light grey */
+        border: 1px solid #D3D3D3;
+        color: black;
+    }
+
+        .btn-lightgrey:hover {
+            background-color: #A9A9A9; /* Darker grey on hover */
+        }
+
+    /* Form Control - Adjusted Colors */
+    .form-control {
+        border: 1px solid #FFC0CB; /* Pink border */
+    }
+
+        .form-control:focus {
+            border-color: #FFB6C1; /* Lighter pink on focus */
+            box-shadow: 0 0 5px rgba(255, 182, 193, 0.5);
+        }
+
+    /* Labels */
+    .control-label {
+        color: #333; /* Dark text for labels */
+    }
+
+    /* Header - Pink Color */
+    .text-pink {
+        color: #FFC0CB; /* Light pink for the header */
+    }
+</style>

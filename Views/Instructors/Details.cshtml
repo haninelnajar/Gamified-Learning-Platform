@@ -1,0 +1,149 @@
+﻿@model ML3.Models.Instructor
+
+@{
+    ViewData["Title"] = "Instructor Details";
+}
+
+<div class="container-fluid bg-white">
+    <!-- Taskbar Navigation -->
+    <div class="row p-3 mb-4">
+        <div class="col text-left">
+            <a asp-action="Edit" asp-route-id="@Model?.InstructorId" class="btn btn-custom mx-2 btn-lg">Edit</a>
+            <a asp-action="Delete" asp-route-id="@Model?.InstructorId" class="btn btn-custom mx-2 btn-lg">Delete</a>
+            <a href="@Url.Action("Create", "LearningPaths")" class="btn btn-custom mx-2 btn-lg">Define a Learning Path</a>
+            <a href="@Url.Action("Create", "InstructorDiscussions")" class="btn btn-custom mx-2 btn-lg">Add Post</a>
+            <a href="@Url.Action("Index", "LearningPaths")" class="btn btn-custom mx-2 btn-lg">Monitor Learning Paths</a>
+            <a href="@Url.Action("Index", "PersonalizationProfiles")" class="btn btn-custom mx-2 btn-lg">Profile</a>
+        </div>
+    </div>
+
+    <div class="row justify-content-start align-items-start min-vh-100 px-5">
+        <div class="col-md-8">
+            <!-- Title with larger font -->
+            <div class="text-left mb-5">
+                <h3 class="text-dark display-3">Instructor Details</h3>
+            </div>
+
+            <!-- Instructor Details Section -->
+            <div class="row mb-4">
+                <div class="col-sm-4 font-weight-bold text-dark">
+                    @Html.DisplayNameFor(model => model.LatestQualification)
+                </div>
+                <div class="col-sm-8 text-muted">
+                    @Html.DisplayFor(model => model.ExpertiseArea)
+                </div>
+            </div>
+
+            <div class="row mb-4">
+                <div class="col-sm-4 font-weight-bold text-dark">
+                    @Html.DisplayNameFor(model => model.Email)
+                </div>
+                <div class="col-sm-8 text-muted">
+                    @Html.DisplayFor(model => model.Password)
+                </div>
+            </div>
+
+            <div class="row mb-4">
+                <div class="col-sm-4 font-weight-bold text-dark">
+                    @Html.DisplayNameFor(model => model.ExpertiseArea)
+                </div>
+                <div class="col-sm-8 text-muted">
+                    @Html.DisplayFor(model => model.ExpertiseArea)
+                </div>
+            </div>
+
+            <div class="row mb-4">
+                <div class="col-sm-4 font-weight-bold text-dark">
+                    @Html.DisplayNameFor(model => model.LatestQualification)
+                </div>
+                <div class="col-sm-8 text-muted">
+                    @Html.DisplayFor(model => model.LatestQualification)
+                </div>
+            </div>
+
+            <div class="row mb-4">
+                <div class="col-sm-4 font-weight-bold text-dark">
+                    @Html.DisplayNameFor(model => model.Email)
+                </div>
+                <div class="col-sm-8 text-muted">
+                    @Html.DisplayFor(model => model.Email)
+                </div>
+            </div>
+
+            <div class="row mb-4">
+                <div class="col-sm-4 font-weight-bold text-dark">
+                    @Html.DisplayNameFor(model => model.Password)
+                </div>
+                <div class="col-sm-8 text-muted">
+                    @Html.DisplayFor(model => model.Password)
+                </div>
+            </div>
+
+            <!-- Courses Available and Enrolled Courses buttons aligned beside each other -->
+            <div class="row justify-content-start mt-5">
+                <div class="col-md-6 col-sm-12 mb-3">
+                    <a asp-controller="Courses" asp-action="Index" class="btn btn-custom btn-block btn-lg">
+                        Courses Available
+                    </a>
+                </div>
+                <div class="col-md-6 col-sm-12 mb-3">
+                    <a href="@Url.Action("Index", "LearningActivities")" class="btn btn-custom btn-block btn-lg">
+                        Enrolled Activities
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Add CSS for customization -->
+<style>
+    .bg-white {
+        background-color: #FFFFFF; /* White background */
+    }
+
+    .text-dark {
+        color: #333; /* Dark text color */
+    }
+
+    .btn-custom {
+        color: #FFC0CB; /* Pink text color */
+        background-color: #FFFFFF; /* White background */
+        border: 2px solid #FFC0CB; /* Pink border */
+        font-size: 1.25rem; /* Larger font for buttons */
+        padding: 1rem 2rem; /* Increased padding */
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .btn-custom:hover {
+        background-color: #FFC0CB; /* Pink background on hover */
+        color: #FFFFFF; /* White text on hover */
+    }
+
+    .row {
+        margin-top: 20px;
+    }
+
+    .col-sm-4 {
+        font-weight: bold;
+        color: #333; /* Dark text for labels */
+        font-size: 1.25rem; /* Larger font for labels */
+    }
+
+    .col-sm-8 {
+        font-size: 1.25rem;
+        color: #555; /* Lighter text for values */
+    }
+
+    .min-vh-100 {
+        min-height: 100vh;
+    }
+
+    .btn:hover {
+        text-decoration: none;
+    }
+
+    .text-left {
+        text-align: left;
+    }
+</style>

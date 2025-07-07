@@ -1,0 +1,98 @@
+﻿@model ML3.Models.Instructor
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<div class="container mt-4">
+    <h1 class="display-4 text-pink">Edit Instructor</h1>
+    <h4 class="text-muted">Update the details of the instructor</h4>
+    <hr />
+
+    <div class="row">
+        <div class="col-md-6">
+            <form asp-action="Edit">
+                <div asp-validation-summary="ModelOnly" class="alert alert-danger"></div>
+                <input type="hidden" asp-for="InstructorId" />
+
+                <div class="form-group bg-white p-3 rounded shadow-sm">
+                    <label asp-for="Name" class="control-label text-pink">Name</label>
+                    <input asp-for="Name" class="form-control border-pink" />
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+
+                <div class="form-group bg-white p-3 rounded shadow-sm">
+                    <label asp-for="LatestQualification" class="control-label text-pink">Latest Qualification</label>
+                    <input asp-for="LatestQualification" class="form-control border-pink" />
+                    <span asp-validation-for="LatestQualification" class="text-danger"></span>
+                </div>
+
+                <div class="form-group bg-white p-3 rounded shadow-sm">
+                    <label asp-for="ExpertiseArea" class="control-label text-pink">Expertise Area</label>
+                    <input asp-for="ExpertiseArea" class="form-control border-pink" />
+                    <span asp-validation-for="ExpertiseArea" class="text-danger"></span>
+                </div>
+
+                <div class="form-group bg-white p-3 rounded shadow-sm">
+                    <label asp-for="Email" class="control-label text-pink">Email</label>
+                    <input asp-for="Email" class="form-control border-pink" />
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+
+                <div class="form-group bg-white p-3 rounded shadow-sm">
+                    <label asp-for="Password" class="control-label text-pink">Password</label>
+                    <input asp-for="Password" class="form-control border-pink" />
+                    <span asp-validation-for="Password" class="text-danger"></span>
+                </div>
+
+                <div class="form-group mt-4">
+                    <input type="submit" value="Save Changes" class="btn btn-pink btn-lg" />
+                    <a asp-action="Index" class="btn btn-secondary btn-lg">Cancel</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
+
+<!-- Add CSS for the color scheme -->
+<style>
+    .text-pink {
+        color: #FFC0CB; /* Pink text color */
+    }
+
+    .bg-white {
+        background-color: #FFFFFF; /* White background */
+    }
+
+    .border-pink {
+        border: 2px solid #FFC0CB; /* Pink border */
+    }
+
+    .btn-pink {
+        background-color: #FFC0CB; /* Pink button background */
+        color: #FFFFFF; /* White text */
+        border: none;
+        padding: 0.75rem 1.5rem;
+        font-size: 1.25rem;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+        .btn-pink:hover {
+            background-color: #FFB6C1; /* Slightly darker pink on hover */
+            transform: scale(1.05); /* Slight zoom effect */
+        }
+
+    .form-group {
+        margin-bottom: 1.5rem;
+    }
+
+    .shadow-sm {
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+</style>

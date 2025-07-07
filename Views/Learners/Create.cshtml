@@ -1,0 +1,71 @@
+﻿@model ML3.Models.Learner
+
+@{
+    ViewData["Title"] = "Create Learner";
+}
+
+<div class="container mt-4">
+    <h1 class="display-4 text-info">Create Learner</h1>
+    <hr />
+
+    <div class="row">
+        <div class="col-md-6">
+            <form asp-action="Create" class="shadow-lg p-4 bg-light rounded">
+                <div asp-validation-summary="ModelOnly" class="alert alert-danger"></div>
+
+                <div class="form-group">
+                    <label asp-for="FirstName" class="control-label text-primary">First Name</label>
+                    <input asp-for="FirstName" class="form-control border-info" placeholder="Enter first name" />
+                    <span asp-validation-for="FirstName" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="LastName" class="control-label text-primary">Last Name</label>
+                    <input asp-for="LastName" class="form-control border-info" placeholder="Enter last name" />
+                    <span asp-validation-for="LastName" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Gender" class="control-label text-primary">Gender</label>
+                    <select asp-for="Gender" class="form-control border-info">
+                        <option value="">-- Select Gender --</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <span asp-validation-for="Gender" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="BirthDate" class="control-label text-primary">Birth Date</label>
+                    <input asp-for="BirthDate" type="date" class="form-control border-info" />
+                    <span asp-validation-for="BirthDate" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Country" class="control-label text-primary">Country</label>
+                    <input asp-for="Country" class="form-control border-info" placeholder="Enter country" />
+                    <span asp-validation-for="Country" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="CulturalBackground" class="control-label text-primary">Cultural Background</label>
+                    <input asp-for="CulturalBackground" class="form-control border-info" placeholder="Enter cultural background" />
+                    <span asp-validation-for="CulturalBackground" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Password" class="control-label text-primary">Password</label>
+                    <input asp-for="Password" type="password" class="form-control border-info" placeholder="Enter a secure password" />
+                    <span asp-validation-for="Password" class="text-danger"></span>
+                </div>
+
+                <div class="form-group mt-3">
+                    <input type="submit" value="Create" class="btn btn-success btn-lg" />
+                    <a asp-action="Index" class="btn btn-secondary btn-lg ml-2">Cancel</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+

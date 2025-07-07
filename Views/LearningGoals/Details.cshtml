@@ -1,0 +1,72 @@
+﻿@model ML3.Models.LearningGoal
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow-lg">
+                <div class="card-header bg-pink text-white text-center">
+                    <h3>Learning Goal Details</h3>
+                </div>
+                <div class="card-body">
+                    <h4 class="mb-4">Learning Goal Information</h4>
+                    <hr />
+                    <dl class="row">
+                        <dt class="col-sm-4 font-weight-bold">
+                            @Html.DisplayNameFor(model => model.Status)
+                        </dt>
+                        <dd class="col-sm-8">
+                            @Html.DisplayFor(model => model.Status)
+                        </dd>
+
+                        <dt class="col-sm-4 font-weight-bold">
+                            @Html.DisplayNameFor(model => model.Deadline)
+                        </dt>
+                        <dd class="col-sm-8">
+                            @Html.DisplayFor(model => model.Deadline)
+                        </dd>
+
+                        <dt class="col-sm-4 font-weight-bold">
+                            @Html.DisplayNameFor(model => model.Description)
+                        </dt>
+                        <dd class="col-sm-8">
+                            @Html.DisplayFor(model => model.Description)
+                        </dd>
+                    </dl>
+                </div>
+                <div class="card-footer text-center">
+                    <!-- Both buttons now have the same background color -->
+                    <a asp-action="Edit" asp-route-id="@Model?.Id" class="btn btn-pink mx-2">Edit</a>
+                    <a asp-action="Index" class="btn btn-pink mx-2 text-white">Back to List</a> <!-- Same background color as "Edit" -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Custom CSS for Buttons -->
+<style>
+    /* Primary Button - Pink Background */
+    .btn-pink {
+        background-color: #FFC0CB; /* Light pink */
+        border: 1px solid #FFC0CB;
+        color: white;
+    }
+
+        .btn-pink:hover {
+            background-color: #FFB6C1; /* Lighter pink on hover */
+        }
+
+    /* Ensuring the "Back to List" button has white text */
+    .text-white {
+        color: white !important;
+    }
+
+    /* Background color for Learning Goal Details section */
+    .card-header {
+        background-color: #FFC0CB; /* Pink background for the header */
+    }
+</style>

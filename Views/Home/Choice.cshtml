@@ -1,0 +1,51 @@
+﻿@{
+    ViewData["Title"] = "Choose Your Role";
+}
+
+<div class="container-fluid bg-pink text-white">
+    <div class="row justify-content-center align-items-center min-vh-100">
+        <div class="col-lg-6 text-center">
+            <h1 class="display-4 mb-4 animate_animated animatefadeIn animate_delay-1s">Sign Up</h1>
+            <p class="lead mb-5 animate_animated animatefadeIn animate_delay-2s">Choose your role to get started:</p>
+            <div class="d-flex flex-column flex-md-row justify-content-center gap-4 animate_animated animatefadeIn animate_delay-3s">
+                <a asp-action="SignUpInstructor" asp-controller="SignUp"
+                   class="btn btn-lg btn-white px-5 py-3 rounded-pill shadow-lg">
+                    Instructor
+                </a>
+                <a asp-action="SignUpAdmin" asp-controller="SignUp"
+                   class="btn btn-lg btn-white px-5 py-3 rounded-pill shadow-lg">
+                    Admin
+                </a>
+                <a asp-action="SignUpLearner" asp-controller="SignUp"
+                   class="btn btn-lg btn-white px-5 py-3 rounded-pill shadow-lg">
+                    Learner
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Add CSS for customization -->
+<style>
+    .bg-pink {
+        background-color: #FFC0CB; /* Soft pink background */
+    }
+
+    .btn-white {
+        color: #FFC0CB; /* Pink text color */
+        background-color: #FFFFFF; /* White button background */
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+        .btn-white:hover {
+            transform: scale(1.1); /* Expand on hover */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add shadow */
+        }
+
+    .btn:hover {
+        text-decoration: none;
+    }
+</style>
+
+<!-- Include Animate.css -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">

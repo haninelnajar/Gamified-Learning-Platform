@@ -1,0 +1,82 @@
+﻿@model ML3.Models.LearningGoal
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1 class="text-pink">Delete</h1>
+
+<h3 class="text-dark">Are you sure you want to delete this?</h3>
+
+<div>
+    <h4 class="text-dark">Learning Goal</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2 text-dark">
+            @Html.DisplayNameFor(model => model.Status)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Status)
+        </dd>
+
+        <dt class="col-sm-2 text-dark">
+            @Html.DisplayNameFor(model => model.Deadline)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Deadline)
+        </dd>
+
+        <dt class="col-sm-2 text-dark">
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+    </dl>
+
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Id" />
+        <input type="submit" value="Delete" class="btn btn-pink btn-lg" />
+        <a asp-action="Index" class="btn btn-lightgrey btn-lg ml-3">Back to List</a>
+    </form>
+</div>
+
+<!-- Custom CSS for Buttons -->
+<style>
+    /* Primary Button - Light Pink Background for Delete */
+    .btn-pink {
+        background-color: #FFC0CB; /* Light pink */
+        border: 1px solid #FFC0CB;
+        color: white;
+    }
+
+        .btn-pink:hover {
+            background-color: #FFB6C1; /* Lighter pink on hover */
+        }
+
+    /* Light Grey Button for Back to List */
+    .btn-lightgrey {
+        background-color: #D3D3D3; /* Light grey */
+        border: 1px solid #D3D3D3;
+        color: black;
+    }
+
+        .btn-lightgrey:hover {
+            background-color: #A9A9A9; /* Darker grey on hover */
+        }
+
+    /* Text Color for Labels */
+    .text-dark {
+        color: #333; /* Dark text for labels */
+    }
+
+    /* Header - Light Pink Color */
+    .text-pink {
+        color: #FFC0CB; /* Light pink for the header */
+    }
+
+    /* Adjusted Warning Text */
+    .text-warning {
+        color: #FF6347; /* Tomato red for warning */
+    }
+</style>

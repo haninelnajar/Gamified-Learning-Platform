@@ -1,0 +1,94 @@
+﻿@model ML3.Models.LearningGoal
+
+@{
+    ViewData["Title"] = "Create Learning Goal";
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow-lg">
+                <div class="card-header bg-pink text-white text-center">
+                    <h3>Create Learning Goal</h3>
+                </div>
+                <div class="card-body">
+                    <h4 class="text-white mb-4">Define your new learning goal</h4>
+                    <hr />
+
+                    <form asp-action="Create">
+                        <div asp-validation-summary="ModelOnly" class="alert alert-danger" role="alert"></div>
+
+                        <div class="form-group mb-4">
+                            <label asp-for="Status" class="form-label">Status</label>
+                            <select asp-for="Status" class="form-control">
+                                <option value="NotStarted">Not Started</option>
+                                <option value="InProgress">In Progress</option>
+                                <option value="Completed">Completed</option>
+                            </select>
+                            <span asp-validation-for="Status" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group mb-4">
+                            <label asp-for="Deadline" class="form-label">Deadline</label>
+                            <input asp-for="Deadline" class="form-control" type="date" />
+                            <span asp-validation-for="Deadline" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group mb-4">
+                            <label asp-for="Description" class="form-label">Description</label>
+                            <textarea asp-for="Description" class="form-control" rows="4"></textarea>
+                            <span asp-validation-for="Description" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group mt-3">
+                            <input type="submit" value="Create Goal" class="btn btn-pink" />
+                            <a asp-action="Index" class="btn btn-pink ml-2">Cancel</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Custom CSS for Buttons and Header -->
+<style>
+    /* Header Style */
+    .card-header.bg-pink {
+        background-color: #FFC0CB; /* Light Pink */
+    }
+
+        .card-header.bg-pink h3 {
+            color: white; /* White text for header */
+        }
+
+    /* Text in Body */
+    .text-white {
+        color: white; /* White text for body content */
+    }
+
+    /* Primary Button */
+    .btn-pink {
+        background-color: #FFC0CB; /* Light Pink */
+        border: 1px solid #FFC0CB;
+        color: white;
+    }
+
+        .btn-pink:hover {
+            background-color: #FFB6C1; /* Slightly darker pink on hover */
+        }
+
+    /* Form and text elements */
+    .form-control {
+        border: 1px solid #FFC0CB;
+    }
+
+    .form-label {
+        color: #FF69B4; /* Hot pink for labels */
+    }
+
+    .alert-danger {
+        background-color: #FFB6C1; /* Light pink alert background */
+        color: white;
+    }
+</style>

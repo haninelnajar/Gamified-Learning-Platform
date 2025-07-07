@@ -1,0 +1,49 @@
+﻿@model ML3.Models.PersonalizationProfile
+
+@{
+    ViewData["Title"] = "Delete Personalization Profile";
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow-lg border-danger">
+                <div class="card-header bg-danger text-white text-center">
+                    <h3 class="mb-0">Delete Personalization Profile</h3>
+                </div>
+                <div class="card-body">
+                    <h4 class="text-danger text-center mb-4">
+                        Are you sure you want to delete this profile?
+                    </h4>
+                    <dl class="row">
+                        <dt class="col-sm-4 fw-bold">Preferred Content Type</dt>
+                        <dd class="col-sm-8">@Html.DisplayFor(model => model.PreferredContentType)</dd>
+
+                        <dt class="col-sm-4 fw-bold">Emotional State</dt>
+                        <dd class="col-sm-8">@Html.DisplayFor(model => model.EmotionalState)</dd>
+
+                        <dt class="col-sm-4 fw-bold">Personality Type</dt>
+                        <dd class="col-sm-8">@Html.DisplayFor(model => model.PersonalityType)</dd>
+
+                        <dt class="col-sm-4 fw-bold">Learner ID</dt>
+                        <dd class="col-sm-8">
+                            @Html.DisplayFor(model => model.LearnerId)
+                        </dd>
+                    </dl>
+                </div>
+                <div class="card-footer d-flex justify-content-between">
+                    <form asp-action="Delete" method="post">
+                        <input type="hidden" asp-for="LearnerId" />
+                        <input type="hidden" asp-for="ProfileId" />
+                        <button type="submit" class="btn btn-danger btn-lg">
+                            <i class="fas fa-trash-alt"></i> Delete
+                        </button>
+                    </form>
+                    <a asp-action="Index" class="btn btn-secondary btn-lg">
+                        <i class="fas fa-arrow-left"></i> Cancel
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

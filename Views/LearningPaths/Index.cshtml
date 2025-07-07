@@ -1,0 +1,55 @@
+﻿@model IEnumerable<ML3.Models.LearningPath>
+
+@{
+    ViewData["Title"] = "Learning Paths";
+}
+
+<div class="container mt-4">
+    <h1 class="display-4">Learning Paths</h1>
+    <p>
+        <a asp-action="Create" class="btn btn-primary">Create New</a>
+    </p>
+    <table class="table table-striped table-hover">
+        <thead class="thead-dark">
+            <!-- Filter Form -->
+            <form method="get" action="@Url.Action("Index", "LearningPaths")">
+                <label for="PathId">Path ID:</label>
+                <input type="number" id="PathId" name="PathId" />
+                <button type="submit">Search</button>
+            </form>
+
+            <tr>
+                <th>@Html.DisplayNameFor(model => model.CompletionStatus)</th>
+                <th>@Html.DisplayNameFor(model => model.CustomContent)</th>
+                <th>@Html.DisplayNameFor(model => model.AdaptiveRules)</th>
+                <th>@Html.DisplayNameFor(model => model.PathId)</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (!Model.Any())
+            {
+                <tr>
+                    <td colspan="5" class="text-center">No learning paths available.</td>
+                </tr>
+            }
+            else
+            {
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@Html.DisplayFor(modelItem => item.CompletionStatus)</td>
+                        <td>@Html.DisplayFor(modelItem => item.CustomContent)</td>
+                        <td>@Html.DisplayFor(modelItem => item.AdaptiveRules)</td>
+                        <td>@Html.DisplayFor(modelItem => item.PathId)</td>
+                        <td>
+                            <a asp-action="Edit" asp-route-id="@item.PathId" class="btn btn-sm btn-warning">Edit</a>
+                            <a asp-action="Details" asp-route-id="@item.PathId" class="btn btn-sm btn-info">Details</a>
+                            <a asp-action="Delete" asp-route-id="@item.PathId" class="btn btn-sm btn-danger">Delete</a>
+                        </td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+</div>

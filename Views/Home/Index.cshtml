@@ -1,0 +1,56 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!-- Main Section -->
+<div class="container-fluid bg-pink text-white">
+    <div class="row justify-content-center align-items-center min-vh-100">
+        <div class="col-lg-6 text-center">
+            <h1 class="display-4 mb-4 animate__animated animate__fadeIn animate__delay-1s">Shako Mako</h1>
+            <p class="lead mb-5 animate__animated animate__fadeIn animate__delay-2s">
+                Join us today to explore our exciting features. Whether you're new or returning, we've got something for everyone!
+            </p>
+
+            <div class="d-flex justify-content-center gap-4">
+                <a asp-action="Choice" asp-controller="Home"
+                   class="btn btn-lg btn-light px-5 py-3 rounded-pill shadow-lg animate__animated animate__fadeInUp animate__delay-3s">
+                    <span class="animate__animated animate__fadeInUp">Sign Up</span>
+                </a>
+                <a asp-action="Choice2" asp-controller="Home"
+                   class="btn btn-lg btn-outline-light px-5 py-3 rounded-pill shadow-lg animate__animated animate__fadeInUp animate__delay-4s">
+                    <span class="animate__animated animate__fadeInUp">Log In</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer Section -->
+<footer class="bg-dark text-white text-center py-4">
+    <p>Ready to get started? Join our platform and take your learning journey to the next level!</p>
+</footer>
+
+<!-- Add CSS for customization -->
+<style>
+    .bg-pink {
+        background-color: #FFC0CB; /* Soft pink background */
+    }
+
+    .btn-light {
+        color: #000;
+        background-color: #fff;
+        border: 1px solid #fff;
+    }
+
+    .btn-outline-light {
+        color: #fff;
+        border: 1px solid #fff;
+    }
+
+    .btn:hover {
+        opacity: 0.9;
+    }
+</style>
+
+<!-- Include Animate.css -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
