@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ML3")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ff0a89a8ddda16047f09e71855ae94a065f704be")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6fa1d12bd30a7e05244f3434fef271876ba2bcb5")]
 [assembly: System.Reflection.AssemblyProductAttribute("ML3")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ML3")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

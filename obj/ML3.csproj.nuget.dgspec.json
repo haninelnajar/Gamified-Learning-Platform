@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Hanin Abdelsattar\\Desktop\\12\\Gamified-Learning-Platform\\Gamified-Learning-Platform\\ML3.csproj": {}
+    "c:\\Users\\Hanin Abdelsattar\\Desktop\\12\\Gamified-Learning-Platform\\Gamified-Learning-Platform\\ML3.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Hanin Abdelsattar\\Desktop\\12\\Gamified-Learning-Platform\\Gamified-Learning-Platform\\ML3.csproj": {
+    "c:\\Users\\Hanin Abdelsattar\\Desktop\\12\\Gamified-Learning-Platform\\Gamified-Learning-Platform\\ML3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Hanin Abdelsattar\\Desktop\\12\\Gamified-Learning-Platform\\Gamified-Learning-Platform\\ML3.csproj",
+        "projectUniqueName": "c:\\Users\\Hanin Abdelsattar\\Desktop\\12\\Gamified-Learning-Platform\\Gamified-Learning-Platform\\ML3.csproj",
         "projectName": "ML3",
-        "projectPath": "C:\\Users\\Hanin Abdelsattar\\Desktop\\12\\Gamified-Learning-Platform\\Gamified-Learning-Platform\\ML3.csproj",
+        "projectPath": "c:\\Users\\Hanin Abdelsattar\\Desktop\\12\\Gamified-Learning-Platform\\Gamified-Learning-Platform\\ML3.csproj",
         "packagesPath": "C:\\Users\\Hanin Abdelsattar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Hanin Abdelsattar\\Desktop\\12\\Gamified-Learning-Platform\\Gamified-Learning-Platform\\obj\\",
+        "outputPath": "c:\\Users\\Hanin Abdelsattar\\Desktop\\12\\Gamified-Learning-Platform\\Gamified-Learning-Platform\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -26,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -84,7 +85,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
